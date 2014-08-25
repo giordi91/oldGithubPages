@@ -38,7 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li class="current"><a href="performanceWidget.html"><span>Main&#160;Page</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -81,11 +81,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
 Introduction</h1>
-<p>This is a small library I wrote in order to create some "performance" widgets. What I mean by that is a series of widgets that can show computer performance, like ram usage , cpu usage etc. I tried to build the library in a way which is a bit flexible and modular and adapt to different type of data. Beware though this is not a library for data plotting, there are a lot of professional libraries out there to do that.</p>
+<p>This is a small library I wrote in order to create some "performance" widgets. What I mean by that is a series of widgets that can show computer performance, like ram usage , CPU usage etc. I tried to build the library in a way which is a bit flexible and modular and adapt to different type of data. Beware though this is not a library for data plotting, there are a lot of professional libraries out there to do that.</p>
 <h1><a class="anchor" id="install_sec"></a>
 Compiling</h1>
-<p>This library doesnt have any external dependency and is self contained. At this point it only work on linux since it relies on a /proc/stat file and other linux specific query. There will be need to modify che classes to work differently on a OSX or Windows enviroment.</p>
-<p>Here my .pro file if can be usefull </p>
+<p>This library doesn't have any external dependency and is self contained. At this point it only work on Linux since it relies on a /proc/stat file and other Linux specific query. There will be need to modify the classes to work differently on a OSX or Windows environment.</p>
+<p>Here my .pro file if can be useful </p>
 <div class="fragment"><div class="line"><span class="preprocessor"> #-------------------------------------------------</span></div>
 <div class="line"><span class="preprocessor"></span><span class="preprocessor">#</span></div>
 <div class="line"><span class="preprocessor"></span><span class="preprocessor"># Project created by QtCreator 2014-06-19T10:25:43</span></div>
@@ -141,20 +141,20 @@ Compiling</h1>
 <div class="line">    mainpage.dox</div>
 </div><!-- fragment --><h2><a class="anchor" id="usage_sec"></a>
 Usage</h2>
-<p>As mentioned before in order to give a bit of flexibilty to this library a specific coding pattern has been adopted. A new widgets need to inherit <a class="el" href="class_performance_widget.html" title="This class is a widget that lets you draw a changing value in time. ">PerformanceWidget</a> class which implements the basic funtionality for the widgets like : </p>
+<p>As mentioned before in order to give a bit of flexibility to this library a specific coding pattern has been adopted. A new widgets need to inherit <a class="el" href="class_performance_widget.html" title="This class is a widget that lets you draw a changing value in time. ">PerformanceWidget</a> class which implements the basic functionality for the widgets like : </p>
 <ul>
 <li>automatic fetch of the data over time </li>
 <li>automatic call of paint functions</li>
 </ul>
-<p>In order to work the widgets needts two extra components that have to been provided by the user. The first is the dataFetcher which inherit from the abstract class <a class="el" href="class_data_query.html" title="This class is an abstract class used to generate classes for data fetching. ">DataQuery</a>. The only goal of this class is to query the data and give it back in a format the widgets is able to use. For example you might want to inherit from this class to create a GpuQuery class.</p>
+<p>In order to work the widgets needs two extra components that have to been provided by the user. The first is the dataFetcher which inherit from the abstract class <a class="el" href="class_data_query.html" title="This class is an abstract class used to generate classes for data fetching. ">DataQuery</a>. The only goal of this class is to query the data and give it back in a format the widgets is able to use. For example you might want to inherit from this class to create a GpuQuery class.</p>
 <p>The next step is to provide a painter class which only goal is to paint the data it s given to it. You need to inherit from the abstract class <a class="el" href="class_performance_painter.html" title="This is an abstract painter. ">PerformancePainter</a>. This means is possible to swap on the fly different type of painters to draw the data in a different way. Different painters have been implemented already like the <a class="el" href="class_bars_painter.html" title="This class is draws bar graphs. ">BarsPainter</a> and the <a class="el" href="class_graph_painter.html" title="This class is draws regular one line graphs. ">GraphPainter</a>.</p>
-<p>The result of this process are the two subclassed <a class="el" href="class_cpu_widget.html" title="Widget that show the cpu performance. ">CpuWidget</a> and <a class="el" href="class_ram_widget.html" title="Widget that show the ram usage. ">RamWidget</a>.</p>
+<p>The result of this process are the two sub-classed <a class="el" href="class_cpu_widget.html" title="Widget that show the cpu performance. ">CpuWidget</a> and <a class="el" href="class_ram_widget.html" title="Widget that show the ram usage. ">RamWidget</a>.</p>
 <p>Included a demo application (main.cpp etc) which looks like this :</p>
 <div class="image">
 <img src="demoWidget.png" alt="demoWidget.png"/>
 <div class="caption">
 Demo Widget</div></div>
-<p> Showing cpu widget at the top and gpu widget at the bottom.</p>
+<p> Showing CPU widget at the top and gpu widget at the bottom.</p>
 <h2><a class="anchor" id="contacts_sec"></a>
 Contacts.</h2>
 <p>For any question feel free to write on my github repo :</p>
@@ -163,7 +163,7 @@ Contacts.</h2>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/performanceWidget.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

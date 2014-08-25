@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['my_20personal_20index_20page',['My Personal Index Page',['../index.html',1,'']]],
+  ['my_20personal_20index_20page',['My Personal Index Page',['../performanceWidget.html',1,'']]],
   ['m_5fbackgroundcolor',['m_backgroundColor',['../class_performance_painter.html#a0f38233ecda7f2297926b13328597072',1,'PerformancePainter']]],
   ['m_5fcache',['m_cache',['../class_data_query.html#a69f31e890656d54bc44b1cc7477a4db5',1,'DataQuery::m_cache()'],['../class_performance_painter.html#a78704e8eb506c4125cd9eb3f0f71adca',1,'PerformancePainter::m_cache()']]],
   ['m_5fcolor1',['m_color1',['../class_performance_painter.html#a2aae14b8cfe23b6d48510606b5ad5601',1,'PerformancePainter']]],
